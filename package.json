@@ -1,9 +1,19 @@
 {
-	"name": "playlists-app-api",
-	"description": "PlaylistsApp API",
-	"version": "0.0.1",
+	"name": "playlistsapp-api",
+	"description": "API do aplicativo PlaylistsApp",
+	"version": "0.1.0",
 	"private": true,
+	"license": "UNLICENSED",
+	"author": "Lucas Miranda <liddack@outlook.com>",
 	"dependencies": {
-		"express": "3.x"
+		"mongoose": "*",
+		"restify": "*",
+		"bcrypt-nodejs": "^0.0.3",
+		"moment": "^2.18.1",
+		"jwt-simple": "^0.5.1"
+	},
+	"scripts": {
+		"start": "nodejs server.js",
+		"inspect": "nodejs --inspect server.js"
 	}
 }
