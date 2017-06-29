@@ -5,7 +5,10 @@ var mongoose = require('mongoose')
 
 mongoose.connect(
 	mongoUris.fullUri, 
-	{server: {auto_reconnect: true}}
+	{
+		server: {auto_reconnect: true},
+		useMongoClient: true
+	}
 );
 var db = mongoose.connection;
 

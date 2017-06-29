@@ -14,6 +14,11 @@ server
     .use(restify.bodyParser())
     .use(restify.fullResponse());
 
+// Root (testes)
+server.get('/', function(req, res, next) {
+    res.send('O server funciona!');
+})
+
 // User 
 //server.get('/users', controllers.user.getUsers);
 server.post('/users', controllers.authMiddleware, controllers.user.createUser);
